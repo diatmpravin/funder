@@ -1,0 +1,21 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: 08_jan
+  pool: 5
+  username: postgres
+  password: password
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: catarse_test
+  pool: 5
+  username: postgres
+  password: password
+
+
+
