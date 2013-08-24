@@ -125,7 +125,7 @@ Vagrant::Config.run do |config|
   config.vm.provision :shell, inline: %q{cd /vagrant && export DISPLAY=:99}
   config.vm.provision :shell, inline: %q{sudo /etc/init.d/xvfb start}
   config.vm.provision :shell, inline: %q{sudo bash -c "echo 'UseDNS no' >> /etc/ssh/sshd_config"}
-  config.vm.provision :shell, inline: %q{cp /vagrant/config/database.sample.yml /vagrant/config/database.yml}
+  config.vm.provision :shell, inline: %q{cp /vagrant/config/database.yml /vagrant/config/database.yml}
   config.vm.provision :shell, inline: %q{cd /vagrant && bundle install}
   config.vm.provision :shell, inline: %q{cd /vagrant && rake db:create db:migrate db:test:prepare db:seed}
   config.vm.provision :shell, inline: %q{cd /vagrant && rails s -d}
