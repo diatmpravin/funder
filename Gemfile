@@ -1,10 +1,11 @@
 source 'http://rubygems.org'
 source 'http://gems.github.com'
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.5'
+gem 'rake', '0.9.2.2'
 gem 'pg'
 gem 'haml'
 gem 'compass'
-gem 'omniauth'
+gem 'omniauth', '0.2.0'
 gem 'formtastic', '~> 1.1.0'
 gem 'inherited_resources', '>=1.1.2'
 gem 'maxim-sexy_pg_constraints'
@@ -17,6 +18,6 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'steak'
   gem 'rspec-rails', "~> 2.0.1"
-  gem 'rcov'
+  #gem 'rcov'
   gem 'factory_girl_rails'
 end
