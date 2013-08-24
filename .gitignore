@@ -7,3 +7,5 @@ db/development_structure.sql
 # Vim
 *.swp
 .idea/
+.idea/workspace.xml
+
