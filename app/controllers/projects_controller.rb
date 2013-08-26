@@ -4,14 +4,14 @@ class ProjectsController < ApplicationController
   actions :index, :show, :new, :create, :edit, :update
   def index
     index! do
-      @title = "Faça acontecer os projetos em que você acredita"
+      @title = "Make It Happen projects that you believe"
       @projects = Project.visible
     end
   end
   def new
     return unless require_login
     new! do
-      @title = "Envie seu projeto"
+      @title = "Submit your project"
       @project.rewards.build
     end
   end

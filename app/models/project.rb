@@ -9,11 +9,11 @@ class Project < ActiveRecord::Base
   accepts_nested_attributes_for :rewards
   validates_presence_of :name, :user, :category, :about, :headline, :goal, :deadline, :video_url
   validates_length_of :headline, :maximum => 140
-  validates_format_of :video_url, :with => VIMEO_REGEX, :message => "somente URLs do Vimeo são aceitas"
+  validates_format_of :video_url, :with => VIMEO_REGEX, :message => "only URLs are accepted Vimeo"
   validate :verify_if_video_exists_on_vimeo
   def verify_if_video_exists_on_vimeo
     unless vimeo and vimeo["id"] == vimeo_id
-      errors.add(:video_url, "deve existir no Vimeo")
+      errors.add(:video_url, "must exist on Vimeo")
     end
   end
   scope :visible, where(:visible => true)

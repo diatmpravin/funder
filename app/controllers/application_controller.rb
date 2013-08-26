@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   end
   def require_login
     unless current_user
-      flash[:failure] = "Você precisa estar logado para realizar esta ação."
+      flash[:failure] = "You must be logged in to perform this action."
       redirect_to :root
       false
     else

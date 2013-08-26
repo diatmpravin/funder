@@ -1,6 +1,6 @@
 = content_for :content_header do
-  %h1 Como funciona o Catarse?
-  %h2 Antes de enviar seu projeto, saiba um pouco mais sobre como funciona o Catarse.
+  %h1 How does Catharsis?
+  %h2 Before submitting your project, know a bit more about how the catharsis.
 #how_it_works
   O Catarse funciona assim: você envia seu projeto, diz
   %strong quanto precisa
@@ -56,7 +56,7 @@
 = form_tag(new_project_path, :method => :get, :id => 'guidelines_form') do
   %fieldset
     = check_box_tag 'accept'
-    = label_tag 'accept', 'Eu li e entendi como funciona o Catarse.'
+    = label_tag 'accept, I have read and understood how the catharsis.'
   %fieldset
-    = submit_tag 'Enviar meu projeto', :disabled => true
+    = submit_tag 'Send my project', :disabled => true
 = javascript_include_tag 'guidelines'

@@ -1,7 +1,7 @@
 .overlay.hide
   #login.hide
     %a.close{ :href => '#' } X
-    %h1 Entre através de sua rede social favorita
+    %h1 Sign in through your favorite social network
     = form_tag(auth_path) do
       = hidden_field_tag 'provider'
       = hidden_field_tag 'return_to'
@@ -9,9 +9,9 @@
       - OauthProvider.order('"order"').all.each do |p|
         = link_to image_tag("auth/#{p.name}_128.png", :title => p.name.capitalize), p.name, :class => 'provider'
     %p
-      Caso você ainda não seja cadastrado, sua conta será criada. Se você já é cadastrado, você será redirecionado para sua conta após o login.
+      If you are not yet registered, your account will be created. If you are already registered, you will be redirected to your account after login.
     %p
-      %strong Lembre-se com qual rede você se cadastrou.
-      É com ela que você sempre irá acessar sua conta.
+      %strong Remember what network you registered.
+      It is with her ​​that you will always access your account.  
 = javascript_include_tag 'login'
 

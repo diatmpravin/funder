@@ -18,7 +18,7 @@
         = render '/layouts/user' if current_user
         #menu
           %ul
-            %li= link_to "Envie seu projeto", guidelines_projects_path, :id => 'new_project_link'
+            %li= link_to "Submit your project", guidelines_projects_path, :id => 'new_project_link'
             - unless current_user
               %li= link_to "Login", '#', :id => 'login_link'
         .clear
@@ -30,26 +30,26 @@
       #footer
         #footer_menu
           %ul
-            %li= link_to "Sobre nós", '#'
-            %li= link_to "Como funciona?", guidelines_projects_path
-            %li= link_to "FAQ/Ajuda", '#'
-            %li= link_to "Termos de uso", '#'
-            %li= link_to "Política de privacidade", '#'
-            %li= mail_to "contato@catarse.me", "Contato"
+            %li=link_to "About Us", '#'
+            %li=link_to "How it works", guidelines_projects_path
+            %li=link_to "FAQ / Help", '#'
+            %li=link_to "Terms of Use", '#'
+            %li=link_to "Privacy Policy", '#'
+            %li=mail_to "contato@catarse.me", "Contact"
         #social_menu
           %ul
             %li
               = link_to '#' do
                 = image_tag('social/twitter_32.png', :title => "Twitter")
-                Siga no Twitter
+                Follow on Twitter
             %li
               = link_to '#' do
                 = image_tag('social/facebook_32.png', :title => "Facebook")
-                Adicione no Facebook
+                Add to Facebook
             %li
               = link_to '#' do
                 = image_tag('social/rss_32.png', :title => "Blog")
-                Leia o blog
+                Read the blog
         #colophon
           = link_to "", "http://softa.com.br", :target => :_blank, :id => "softa_logo"
           %p#copyright Copyright © 2010
