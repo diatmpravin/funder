@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 source 'http://gems.github.com'
-gem 'rails', '3.0.3'
+gem 'rails', '3.0.5'
 gem 'pg'
 gem 'haml'
 gem 'slim'
@@ -14,7 +14,8 @@ gem 'vimeo'
 gem 'wirble'
 gem "on_the_spot"
 gem 'unicorn'
-gem 'mailee', '>= 0.5.1', :git => 'https://github.com/softa/mailee-api.git'
+# gem 'mailee', '>= 0.5.1', :git => 'https://github.com/softa/mailee-api.git'
+gem 'mailee'
 gem 'will_paginate'
 gem 'weekdays'
 gem 'moip', :git => 'https://github.com/danielweinmann/moip-ruby.git'
@@ -31,7 +32,7 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'steak', "~> 1.1.0"
   gem 'rspec-rails', "~> 2.0.1"
-  gem 'rcov'
+  # gem 'rcov'
   gem 'factory_girl_rails'
   gem 'mocha'
 end
