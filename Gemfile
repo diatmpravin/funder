@@ -7,6 +7,7 @@ source 'http://rubygems.org'
 source 'http://gems.github.com'
 gem 'rails', '3.0.5'
 gem 'rake', '0.8.7'
+gem "rails-erd"
 gem 'haml'
 gem 'slim'
 gem 'sass', '3.1.7'
